@@ -278,7 +278,6 @@ app.get("/report", async (req, res) => {
   }
 });
 
-//process.env.PORT
-const listener = app.listen(3030, () => {
+const listener = app.listen(process.env.PORT, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
